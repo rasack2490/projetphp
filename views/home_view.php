@@ -8,24 +8,28 @@
 </head>
 
 <body class=" h-100">
-    <?php include_once 'views/includes/header.php' ?>
     <!-- <div class="main" role="main"> -->
         <div class="container p-5">
             <div class="card">
                 <div class="card-header">
-                    Accueil
+                    Informations
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Pseudo : </h4>
+                            <h4>Email :</h4>
+                            <h4>Loisirs: </h4>
+                        </div>
+
+                    </div>
+                    <a href="edit" class="btn btn-primary">Modifier vos infos</a>
                 </div>
             </div>
         </div>
 
 
     <!-- </div> -->
-    <?php include_once 'views/includes/footer.php' ?>
     <?php include_once 'views/includes/scripts.php' ?>
 </body>
 
