@@ -4,6 +4,8 @@
 
         public $success;
         public $error;
+        public $successM;
+        public $errorM;
 
         public function __construct($success, $error){
             $this->success = $success;
@@ -11,11 +13,12 @@
         }
 
         public function successMsg($successM){
-            
-            return $successM;
+            $this->errorM = $successM;
+            // return $this->successM;
         }
         public function errorMsg($errorM){
-            return $errorM;
+            $this->errorM = $errorM;
+            // return $this->errorM;
         }
 
     }

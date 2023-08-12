@@ -10,15 +10,15 @@
             if($login->verifyPassword())
             {
                 $_SESSION['user'] = $login->getUserInfo();
-                header('Location: home.php');
+                header('Location: home');
             }else{
                 $message = new Message(false, true);
-                echo '<h1 class="error">'.$message->errorMsg('Mot de passe incorrect').'</h1>';
+               $message->errorMsg('Mot de passe incorrect');
 
             }
         }else{
             $message = new Message(false, true);
-            echo '<h1 class="error">'.$message->errorMsg('Email incorrect').'</h1>';
+           $message->errorMsg('Email incorrect');
             // echo $message->errorMsg('Email incorrect');
         }
     }

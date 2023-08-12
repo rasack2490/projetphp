@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS users(
     pseudo VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
     password VARCHAR(100) NOT NULL,
-    hobbies VARCHAR(255) NOT NULL,
+    hobbies VARCHAR(255) Default NULL,
     autre VARCHAR(100) Default NULL,
     sent_newsletter TINYINT(1) DEFAULT 0,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,

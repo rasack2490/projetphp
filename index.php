@@ -3,11 +3,16 @@
  include_once '_config/db.php';
  include_once '_functions/functions.php';
 
- 
+
 if (isset($_GET['page']) && !empty($_GET['page'])) {
-    $page = trim(strtolower($_GET['page']));
+    if(isset($_SESSION['user']) && !empty($_SESSION['user'])){
+
+        $page = trim(strtolower($_GET['page']));
+    }else{
+        $page = 'login';
+    }
 } else{
-    $page = 'home';
+    $page = 'login';
 }
 
 $allPages = scandir('controllers/');

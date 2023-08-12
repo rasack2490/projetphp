@@ -20,7 +20,13 @@
     </div>
 
     <form action="" method="post">
-        <h3>Connexion</h3>
+      <?php if(isset($message) && $message->error == true){  ?>
+
+      <div style="background-color: red;  padding: 20px ">
+            <h4><?= $message->errorM ?> </h4>
+      </div>
+      <?php } ?>
+      <h3>Connexion</h3>
 
         <label for="email">email</label>
         <input type="email" placeholder="Email" name="email">
