@@ -26,6 +26,7 @@
                             <?php }else{ ?>
                             <h4>Newsletter : Non</h4>
                             <?php } ?>
+                            <h4>Creer le : <?= $_SESSION['user']['created_at'] ?></h4>
                         </div>
 
                         <div class="col-md-6">
